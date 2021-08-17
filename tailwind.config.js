@@ -3,8 +3,13 @@ const defaultTheme = require('tailwindcss/defaultTheme');
 
 module.exports = {
   mode: 'jit',
-  purge: ['./public/**/*.html', './src/**/*.{js,jsx,ts,tsx,vue}', './pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
-  darkMode: false, // or 'media' or 'class'
+  purge: [
+    './public/**/*.html',
+    './src/**/*.{js,jsx,ts,tsx,vue}',
+    './pages/**/*.{js,ts,jsx,tsx}',
+    './components/**/*.{js,ts,jsx,tsx}',
+  ],
+  darkMode: 'class', // or 'media' or 'class'
   theme: {
     screens: {
       sm: '640px',
@@ -13,6 +18,16 @@ module.exports = {
       xl: '1536px',
     },
     colors: colors,
+    // colors: [
+    //   colors,
+    //   {
+    //     primary: {
+    //       light: '#F1F1F1',
+    //       DEFAULT: '#011627',
+    //       dark: '#011627',
+    //     },
+    //   },
+    // ],
     fontFamily: {
       sans: ['Lato', ...defaultTheme.fontFamily.sans, 'Graphik', 'sans-serif'],
       serif: ['Merriweather', 'serif'],
