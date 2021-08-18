@@ -18,16 +18,6 @@ module.exports = {
       xl: '1536px',
     },
     colors: colors,
-    // colors: [
-    //   colors,
-    //   {
-    //     primary: {
-    //       light: '#F1F1F1',
-    //       DEFAULT: '#011627',
-    //       dark: '#011627',
-    //     },
-    //   },
-    // ],
     fontFamily: {
       sans: ['Lato', ...defaultTheme.fontFamily.sans, 'Graphik', 'sans-serif'],
       serif: ['Merriweather', 'serif'],

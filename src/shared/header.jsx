@@ -1,21 +1,18 @@
+import Logo from '../../public/images/logos/w-logo.svg';
+
 const Header = () => {
   return (
     <div className='container mx-auto px-4 bg-primary'>
-      <svg
-        xmlns='http://www.w3.org/2000/svg'
-        className='h-6 w-6'
-        fill='none'
-        viewBox='0 0 24 24'
-        stroke='currentColor'
-      >
-        <path
-          strokeLinecap='round'
-          strokeLinejoin='round'
-          strokeWidth={2}
-          d='M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4'
-          className='text-white'
-        />
-      </svg>
+      <div class='flex items-center py-5'>
+        <div class='flex-auto'>
+          <img src={Logo.src} alt='logo' />
+        </div>
+        <div class='flex items-center space-x-4'>
+          <div>1</div>
+          <div>2</div>
+          <div>3</div>
+        </div>
+      </div>
     </div>
   );
 };
